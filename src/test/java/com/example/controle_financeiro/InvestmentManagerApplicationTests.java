@@ -1,4 +1,4 @@
-package com.example.investment_manager;
+package com.example.controle_financeiro;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

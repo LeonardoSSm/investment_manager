@@ -2,7 +2,9 @@ package com.example.controle_financeiro.service;
 
 import com.example.controle_financeiro.model.Transacao;
 import com.example.controle_financeiro.repository.TransacaoRepository;
+import com.example.controle_financeiro.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -13,6 +15,7 @@ public class TransacaoService {
 
     @Autowired
     private TransacaoRepository transacaoRepository;
+
 
     public List<Transacao> listarTodos(){
         return transacaoRepository.findAll();
